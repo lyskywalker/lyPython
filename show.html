@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form  method="post">
+    content:{{ form.content }}
+    <br>
+    sender: {{form.sender  }}
+    <br>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</form>
+<ul>
+{% for each in entries %}
+<li>{{ each.content }} Send by {{ each.sender }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
